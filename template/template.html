@@ -1,0 +1,10 @@
+<div class="row temp">
+	<div ng-repeat="temp in template">
+		<div class="col-md-4 well">
+		<h3>{{temp.name}}</h3>
+		<img ng-src="img/{{temp.images[0].name}}"/>
+		<h4> {{temp.price | currency}}</h4>
+		<a class="btn btn-primary btn-block" href="#/template/{{temp.id}}">Details</a>
+		</div>
+	</div>
+</div>

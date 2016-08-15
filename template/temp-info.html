@@ -1,0 +1,26 @@
+<div>
+		<a href="#/template"> Go Back</a>
+		<br>
+		<br>
+		
+        
+		<div class=row>
+			<div class="col-md-4">
+				<img style= "width:	100%" src="img/{{imageFull}}">
+				<div class="row">
+					<div ng-repeat ="images in template.images | limitTo:4" >
+						<div class="col-md-3">
+						<img style="width: 100%" ng-src="img/{{img.name}}">
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="col-md-8">
+				<h3> {{template.name}} </h3>
+				<p>{{template.description}}</p>
+				<h4>{{template.price | currency}}</h4>
+		    BUT IT {PAYPALL VC ACCOUNT TO PAY} 
+			</div>
+		</div>
+		
+</div>
